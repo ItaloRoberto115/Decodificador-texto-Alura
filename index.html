@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Decodificador-de-texto</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+ <body>
+    <header>
+        <div class="caixa">
+            <h1 class="logo"><img src="imagens/Vector.png"><img></h1>
+        </div>
+    </header>
+        <main>
+            <div class="area-texto">
+                <label for="text-area"></label>
+                <textarea id="text-area" name="text-area" rows="20" cols="30" autofocus placeholder="Digite seu texto" required></textarea>
+            </div>
+           
+            <div class="texto-result">
+                <img class="boneco-texto" src="imagens/High quality products 1 1.png">
+                <img class="mensagem-texto"  src="imagens/resultado.png">
+                <label for="text2"></label>
+                <textarea id="text2" name="text2" rows="20" cols="30" value="" ></textarea>
+                <button class="copy">Copiar</button>
+            </div>
+
+                <p class="alerta"><img src="imagens/alert.png"> Apena letras minusculas sem acento</p>
+
+            <div class="botao">
+                <button class="criptografar">Criptografar</button>
+                <button class="descriptografar">Descriptografar</button>
+                
+            </div>
+
+            <div class="texto-mobile">
+                <p class="sem-texto">Nenhuma mensagem encontrada</p>
+                <p class="sem-texto2">Digite um texto que você deseja criptografar ou descriptografar</p>
+                <label for="text-mob"></label>
+                <textarea id="text-mob" name="text-mob" rows="20" cols="30"  value=""></textarea>
+                <button class="copyMob">Copiar</button>
+            </div>
+             
+        </main>
+    </body>
+</html>
+<script src="js/criptobotao.js"></script>
+<script src="js/descript.js"></script>
+<script src="js/copiar.js"></script>

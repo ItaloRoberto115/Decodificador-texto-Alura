@@ -1,0 +1,273 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:#F3F5FC ;
+    
+    overflow-x: hidden;
+    
+}
+/*div do logo */
+.caixa{
+    background-color: #101a28;
+	width: 100%;
+    height: 100px;
+}
+.logo{
+    position: relative;
+    margin:0 20px 0 20px ;
+    left:70px;
+    top:30px;
+}
+
+
+/* div para enviar texto*/
+
+.area-texto{
+    top: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 20px 200px;
+    width: 40%;
+    
+}
+#text-area{
+    
+    left: 140px;
+    padding: 100px  25px 0;
+    border: none ;
+    width: 590px;
+    resize: none;
+    background-color:#F3F5FC ;
+    font-size: 32px;
+}
+/*definir um script de invisible na fase de js*/
+
+.boneco-texto{
+    position: relative;
+    bottom: 200px;
+    left: 70px;
+    display:flex;
+}
+.mensagem-texto{
+    position: relative;
+    bottom: 150px;
+    left: 70px;
+    display:flex;
+}
+/*!!!*/
+
+/*div para resultados*/
+.texto-result{
+    display: inline-block;
+    
+}
+
+#text2{
+    position: absolute;
+    border: none;
+    resize: none;
+    height: 900px;
+    width: 400px;
+    padding: 50px 32px;
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    font-size: 24px;
+    bottom: 0px;
+    top: 110px; 
+    background: transparent;
+ }
+/*paragrafo*/
+.alerta{
+    margin: 20px 0 10px 220px;
+    font-weight: bold;
+    font-size: 12px;
+}
+p img{
+    width: 12px;
+}
+/*butao */
+
+.criptografar{
+    
+    width: 328px;
+    height: 67px;
+    background-color:#0A3871 ;
+    border-radius: 24px;
+    font-size: 16px;
+    margin: 0px 0px 0 200px;
+    padding: 24px;
+    text-align: center;
+    color: #ffffff;
+    
+    
+}
+.criptografar:active{
+    background-color: #0A3871;
+    font-size: 14px;
+    transition:all 400ms;
+}
+.descriptografar{
+    margin:  0px 0px 0;
+    width: 328px;
+    height: 67px;
+    background-color:#D8DFE8;
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 24px;
+    text-align: center;
+    color: #0A3871;
+}
+.descriptografar:active{
+    background-color: #0A3871;
+    font-size: 14px;
+    transition:all 400ms;
+}
+/*copiar botao */
+.copy{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    box-sizing: border-box;
+    width: 326px;
+    height: 67px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:#D8DFE8;
+    position: relative;
+    margin: 0 70px;
+    display: none;
+    
+}
+.copy:active{
+    background-color: #0A3871;
+    font-size: 14px;
+    transition:all 400ms;
+}
+/*none mobile desativar para pc*/
+.texto-mobile, .sem-texto, .sem-texto2{
+    display:none;
+}
+
+.remover-imagem{
+    display: none;
+    
+}
+
+.mostrar{
+    display: block;
+}
+
+@media screen and (max-width: 1660px){
+    body{
+        margin: 0 20px;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+    }
+
+    .boneco-texto, .mensagem-texto, .texto-result, #text2{
+        display: none;
+    }
+    .logo{
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        left: 40px;
+        
+    }
+    .area-texto{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        text-align: center;
+           
+    }
+    #text-area{
+        width: 90%;
+        padding: 0 5% 0 5%;
+        margin: 0 auto;
+        height: 500px;
+        
+    }
+    .alerta{
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        top: 50px;
+        
+    }
+    .botao{
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        top: 50px;
+
+    }
+    .criptografar{
+        margin: 0 auto;
+        
+    }
+    .texto-mobile{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 110px;
+
+    }
+    #text-mob{
+    
+        border: none;
+        resize: none;
+        width: 90%;
+        padding: 25px 5% 0 5%;
+        border-radius: 20px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        font-size: 24px;
+        
+    }
+    /*mensagem remover no js*/
+    .sem-texto{
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 70px;
+    }
+    .sem-texto2{
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        text-align: center;
+        top: 140px;
+        width: 100%;
+    }
+    .invisible{
+        display: none;
+    }
+    .copyMob{
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        margin: 0 auto;
+        width: 326px;
+        height: 67px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color:#F3F5FC;
+        position: relative;
+        bottom:100px;
+        padding: 0;
+        display: none;
+    }
+    .copyMob:active{
+        background-color: #0A3871;
+        font-size: 14px;
+        transition:all 400ms;
+    }
+    .mostrarMob{
+        display: block;
+    }
+ }
