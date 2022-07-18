@@ -122,6 +122,9 @@ p img{
     font-size: 14px;
     transition:all 400ms;
 }
+.botao{
+    height: 200px;
+}
 /*copiar botao */
 .copy{
     border: 1px solid #0A3871;
@@ -154,6 +157,64 @@ p img{
 
 .mostrar{
     display: block;
+}
+.myfooter{
+    background-image: url("../Imagens/footer.png");
+    height: 350px;
+    text-align: center;
+    color: aliceblue;
+    
+}
+.text-footer{
+    position: relative;
+    font-size: 20px;
+    top: 100px;
+    font-style: Montserrat;
+
+}
+.icons{
+    position: relative;
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    top: 130px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25s;
+}
+.icon--linkedin:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+.icon--github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
 }
 
 @media screen and (max-width: 1660px){
@@ -270,4 +331,9 @@ p img{
     .mostrarMob{
         display: block;
     }
+    .myfooter{
+        position: relative;
+        top: 110px;
+    }
  }
+ 
