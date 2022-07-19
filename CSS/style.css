@@ -159,7 +159,7 @@ p img{
     display: block;
 }
 .myfooter{
-    background-image: url("/imagens/footer.png");
+    background-image: url("../imagens/footer.png");
     height: 350px;
     text-align: center;
     color: aliceblue;
